@@ -1,0 +1,166 @@
+.card {
+  position: relative;
+  background: white;
+  padding: 7vh 5vw 7vh 5vw;
+  overflow: hidden;
+  max-width: 300px;
+}
+
+.body {
+  background: linear-gradient(45deg, #1de5e2, #b588f7);
+  color: #000000c4;
+  width: 100vw;
+  height: 92vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+h5.hd {
+  color: #06ffff;
+  margin: 2vh 2vh 0vh 2vh;
+  text-align: left;
+  font-size: 50px;
+}
+.title {
+  margin: 0vh 2vh 7vh 2vh;
+  overflow: hidden;
+  z-index: 1;
+}
+
+input {
+  outline: 0;
+  border-width: 0;
+}
+.field {
+  border-bottom: 1px solid black;
+  width: 80%;
+  margin: auto;
+  padding: 0px 0px 10px 0px;
+}
+
+.field:hover {
+  border-bottom: 1px solid deepskyblue;
+}
+
+.fa-envelope,
+.fa-lock {
+  font-size: 25px;
+  padding: 0px 25px 0px 0px;
+}
+.fa-lock {
+  font-size: 30px;
+}
+::placeholder {
+  font-size: 15px;
+}
+
+.f_pwd {
+  margin-left: 0;
+}
+
+button.login {
+  margin: 34px 0px 0px 0px;
+  font-size: 25px;
+  background: linear-gradient(90deg, #b960df, #6029fd);
+
+  color: white;
+  padding: 5px 30% 5px 30%;
+}
+
+a.s_up {
+  text-decoration: none;
+  font-weight: bold;
+  color: #06ffff;
+  font-weight: 600;
+}
+
+.no_ac {
+  margin: 36px 0 0;
+}
+.card::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: linear-gradient(#b588f7, #1de5e2);
+  position: absolute;
+  right: -70px;
+  top: 10px;
+  z-index: 10;
+}
+
+.card::after {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(#b588f7, #1de5e2);
+  position: absolute;
+  left: -70px;
+  border-radius: 50%;
+  bottom: 75px;
+  z-index: 10;
+}
+
+@media (max-width: 924px) {
+  .card::before {
+    content: "";
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    background: linear-gradient(#b588f7, #1de5e2);
+    position: absolute;
+    right: -70px;
+    top: 10px;
+    z-index: 10;
+  }
+
+  .card::after {
+    content: "";
+    width: 125px;
+    height: 125px;
+    background: linear-gradient(#b588f7, #1de5e2);
+    position: absolute;
+    left: -70px;
+    border-radius: 50%;
+    bottom: 75px;
+    z-index: 10;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 325px) {
+  .card::before {
+    content: "";
+    width: 115px;
+    height: 115px;
+    border-radius: 50%;
+    background: linear-gradient(#b588f7, #1de5e2);
+    position: absolute;
+    right: -70px;
+    top: 10px;
+    z-index: 10;
+  }
+
+  .card::after {
+    content: "";
+    width: 115px;
+    height: 115px;
+    background: linear-gradient(#b588f7, #1de5e2);
+    position: absolute;
+    left: -70px;
+    border-radius: 50%;
+    bottom: 75px;
+    z-index: 10;
+  }
+
+  .fa-envelope,
+  .fa-lock {
+    font-size: 25px;
+    padding: 0px 20px 0px 0px;
+  }
+}
